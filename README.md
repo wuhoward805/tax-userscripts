@@ -24,15 +24,58 @@ Tampermonkey 用户脚本，用于湖北税务电子发票平台的 OCR 识别�
 
 ## OCR 引擎配置
 
-脚本支持多种 OCR 引擎，在面板设置中切换：
+脚本支持多种 OCR 引擎，在面板点击「⚙️ 设置」按钮切换引擎并填入 API Key。
 
-| 引擎 | 说明 |
-|------|------|
-| 智谱 GLM-4.6V | 永久免费，推荐 |
-| 豆包视觉模型 | 识别最准确，推荐 |
-| 百度 OCR | 需配置 API Key |
-| OCR.space | 免费，每月 25000 次 |
-| Tesseract | 本地引擎，首次加载较慢 |
+### 智谱 GLM-4.6V-Flash（永久免费，推荐）
+
+1. 打开 [智谱开放平台](https://open.bigmodel.cn/) 注册账号
+2. 进入控制台 → 「API Keys」页面
+3. 点击「添加 API Key」生成密钥
+4. 复制 API Key 填入脚本设置面板
+
+- 接口地址：`https://open.bigmodel.cn/api/paas/v4/chat/completions`
+- 模型：`glm-4.6v-flash`
+- 费用：**永久免费**
+- 注意：如遇到「访问量过大」提示，是服务端临时限流，稍后重试即可
+
+### 豆包视觉模型（识别最准确，推荐）
+
+1. 打开 [火山引擎](https://www.volcengine.com/) 注册账号
+2. 进入 [方舟控制台](https://console.volcengine.com/ark/) 
+3. 「在线推理」→ 创建推理接入点，选择视觉模型（如 `doubao-seed-2-0-mini`）
+4. 在接入点详情页获取 API Key
+5. 复制 API Key 填入脚本设置面板
+
+- 接口地址：`https://ark.cn-beijing.volces.com/api/v3/chat/completions`
+- 注意：如遇到「安全体验模式推理上限」提示，需在方舟控制台的 [开通管理页面](https://console.volcengine.com/ark/region:ark+cn-beijing/openManagement) 关闭「安心体验模式」开关
+
+### 百度 OCR
+
+1. 打开 [百度智能云](https://cloud.baidu.com/) 注册账号
+2. 进入 [文字识别 OCR 控制台](https://console.bce.baidu.com/ai/#/ai/ocr/overview/index)
+3. 点击「创建应用」，填写应用名称
+4. 创建后获取 **API Key** 和 **Secret Key**
+5. 将两者填入脚本设置面板
+
+- 接口地址：`https://aip.baidubce.com/rest/2.0/ocr/v1/general_basic`
+- 费用：每月有免费调用额度，超出后按次计费
+- 支持高精度模式（accurate_basic），可在设置中开启
+
+### OCR.space
+
+1. 打开 [OCR.space](https://ocr.space/ocrapi) 注册账号
+2. 注册后在页面中查看你的 API Key
+3. 复制 API Key 填入脚本设置面板
+
+- 费用：免费版每月 25000 次请求
+- 支持中文识别
+
+### Tesseract（本地引擎，无需配置）
+
+- 无需 API Key，无需注册
+- 基于 [tesseract.js](https://github.com/naptha/tesseract.js) 在浏览器本地运行
+- 首次使用需下载语言模型（约 10-30 秒）
+- 识别精度不如云端模型，建议作为备用方案
 
 ## License
 
