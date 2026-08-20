@@ -36,7 +36,7 @@ Tampermonkey 用户脚本，用于湖北税务电子发票平台的 OCR 识别�
 - 接口地址：`https://open.bigmodel.cn/api/paas/v4/chat/completions`
 - 模型：`glm-4.6v-flash`
 - 费用：**永久免费**
-- 注意：如遇到「访问量过大」提示，是服务端临时限流，稍后重试即可
+- 注意：容易出现平台服务过载，导致无法快速多次识别文字，稍后重试即可
 
 ### 豆包视觉模型（识别最准确，推荐）
 
@@ -47,6 +47,7 @@ Tampermonkey 用户脚本，用于湖北税务电子发票平台的 OCR 识别�
 5. 复制 API Key 填入脚本设置面板
 
 - 接口地址：`https://ark.cn-beijing.volces.com/api/v3/chat/completions`
+- 费用：限定免费额度，额度用完按量收费，价格不贵
 - 注意：如遇到「安全体验模式推理上限」提示，需在方舟控制台的 [开通管理页面](https://console.volcengine.com/ark/region:ark+cn-beijing/openManagement) 关闭「安心体验模式」开关
 
 ### 百度 OCR
@@ -60,6 +61,7 @@ Tampermonkey 用户脚本，用于湖北税务电子发票平台的 OCR 识别�
 - 接口地址：`https://aip.baidubce.com/rest/2.0/ocr/v1/general_basic`
 - 费用：每月有免费调用额度，超出后按次计费
 - 支持高精度模式（accurate_basic），可在设置中开启
+- 注意：识别人手写的字准确率不高
 
 ### OCR.space
 
