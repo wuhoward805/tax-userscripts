@@ -20,6 +20,8 @@
 // @connect      api.ocr.space
 // @connect      open.bigmodel.cn
 // @run-at       document-idle
+// @updateURL    https://raw.githubusercontent.com/wuhoward805/hubei-tax-userscripts/main/box-select-ocr-fill-demo.user.js
+// @downloadURL  https://raw.githubusercontent.com/wuhoward805/hubei-tax-userscripts/main/box-select-ocr-fill-demo.user.js
 // ==/UserScript==
 
 (function () {
