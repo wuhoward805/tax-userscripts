@@ -26,7 +26,7 @@ Tampermonkey 用户脚本，用于湖北税务电子发票平台的 OCR 识别�
 
 脚本支持多种 OCR 引擎，在面板点击「⚙️ 设置」按钮切换引擎并填入 API Key。
 
-### 智谱 GLM-4.6V-Flash（永久免费，推荐）
+### 智谱 GLM-4.6V-Flash（永久免费，但容易出现平台服务过载，导致无法快速多次识别文字）
 
 1. 打开 [智谱开放平台](https://open.bigmodel.cn/) 注册账号
 2. 进入控制台 → 「API Keys」页面
@@ -38,7 +38,7 @@ Tampermonkey 用户脚本，用于湖北税务电子发票平台的 OCR 识别�
 - 费用：**永久免费**
 - 注意：容易出现平台服务过载，导致无法快速多次识别文字，稍后重试即可
 
-### 豆包视觉模型（识别最准确，推荐）
+### 豆包视觉模型（限定免费，额度用完按量收费，但价格不贵）
 
 1. 打开 [火山引擎](https://www.volcengine.com/) 注册账号
 2. 进入 [方舟控制台](https://console.volcengine.com/ark/) 
@@ -50,7 +50,7 @@ Tampermonkey 用户脚本，用于湖北税务电子发票平台的 OCR 识别�
 - 费用：限定免费额度，额度用完按量收费，价格不贵
 - 注意：如遇到「安全体验模式推理上限」提示，需在方舟控制台的 [开通管理页面](https://console.volcengine.com/ark/region:ark+cn-beijing/openManagement) 关闭「安心体验模式」开关
 
-### 百度 OCR
+### 百度 OCR（不是很好用，识别人手写的字准确率不高）
 
 1. 打开 [百度智能云](https://cloud.baidu.com/) 注册账号
 2. 进入 [文字识别 OCR 控制台](https://console.bce.baidu.com/ai/#/ai/ocr/overview/index)
