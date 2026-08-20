@@ -1,10 +1,10 @@
 # 湖北税务开票辅助脚本
 
-Tampermonkey 用户脚本集，用于湖北税务电子发票平台的 OCR 识别与自动填表。
+Tampermonkey 用户脚本，用于湖北税务电子发票平台的 OCR 识别与自动填表。
 
-## 脚本列表
+## 脚本
 
-### box-select-ocr-fill-demo.user.js（主要脚本）
+### box-select-ocr-fill-demo.user.js
 
 凭证单据框选识别填表工具，功能包括：
 
@@ -16,18 +16,10 @@ Tampermonkey 用户脚本集，用于湖北税务电子发票平台的 OCR 识�
 - 跨字段校验（个人支付 + 政府补贴 ≈ 单价）
 - 备注模板自定义、方框调整大小、滚动填表
 
-### hubei-tax-auto-invoice.user.js
-
-湖北税务自动开票辅助脚本。
-
-### invoice-ocr-fill-demo.user.js
-
-发票 OCR 识别填表演示脚本。
-
 ## 安装
 
 1. 安装 [Tampermonkey](https://www.tampermonkey.net/) 浏览器扩展
-2. 点击脚本文件 → Raw → Tampermonkey 自动弹出安装提示
+2. 点击 [box-select-ocr-fill-demo.user.js](https://github.com/wuhoward805/hubei-tax-userscripts/raw/main/box-select-ocr-fill-demo.user.js) → Tampermonkey 自动弹出安装提示
 3. 确认安装
 
 ## OCR 引擎配置
